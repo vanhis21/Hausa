@@ -32,52 +32,29 @@ const maleNames = [
     return [gender, day, month, year];
   }
 
+// calculates week day
+function calculateWeekDay(birthDate) {
+  let [dayOfMonth, monthOfYear, yearOfBirth] = birthDate;
+  let zeroBasedCentury, yearOfCentury;
+  if (monthOfYear <= 2) {
+    monthOfYear += 12;
+    yearOfBirth -= 1;
+    }  
 
-  // calculates week day
-  function calculateWeekDay(birthDate) {
-    let [dayOfMonth, monthOfYear, yearOfBirth] = birthDate;
-    let zeroBasedCentury, yearOfCentury;
-  
-
-
-
-    if (monthOfYear <= 2) {
-      monthOfYear += 12;
-      yearOfBirth -= 1;
-    }
-  
-    // Split year to centuryCode & yearCode
-    zeroBasedCentury = parseInt(yearOfBirth / 100);
-    yearOfCentury = yearOfBirth % 100;
-  
-    let dayOfWeek =
-      (dayOfMonth +
-        parseInt(
-          2.6 * (monthOfYear + 1) +
-            yearOfCentury +
-            parseInt(yearOfCentury / 4) +
-            parseInt(zeroBasedCentury / 4) +
-            5 * zeroBasedCentury
-        )) %
-      7;
-  
-    // return dayOfWeek as a zero-based index
-    // dayOfWeek = (0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday)
-    return dayOfWeek;
-  }
-  function deriveName() {
-    let formData = fetchFormData();
-    let userBirthDate, userGender, dayOfWeek;
-  
-    [userGender, ...userBirthDate] = formData;
-    dayOfWeek = calculateWeekDay(userBirthDate);
-  
-    if (userGender === "Male") {
-      alert("Your Akan Name is: " + maleNames[dayOfWeek]);
-    } else {
-      alert("Your Akan Name is: " + femaleNames[dayOfWeek]);
-    }
-  
-    return false;
-  }
-  
+// Split year to centuryCode & yearCode
+zeroBasedCentury = parseInt(yearOfBirth / 100);
+yearOfCentury = yearOfBirth % 100;
+let dayOfWeek =
+(dayOfMonth +
+parseInt(
+2.6 * (monthOfYear + 1) +
+yearOfCentury +
+parseInt(yearOfCentury / 4) +
+parseInt(zeroBasedCentury / 4) +
+5 * zeroBasedCentury
+)) %
+7;
+// return dayOfWeek as a zero-based index
+// dayOfWeek = (0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday)
+return dayOfWeek;
+}
