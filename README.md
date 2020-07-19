@@ -1,16 +1,16 @@
 # Hausa Translator
 
-The program takes your first name and translates it to Hausa day names of the week regarding on the day you were born.
-It also shows you the specific birth day when you provide your birth date, month and year.
+The program takes your birthday and translates it to Hausa day names of the week regarding on the day you were born and your gender.
 
-SYSTEM REQUIREMENTS :
+
+##SYSTEM REQUIREMENTS :
 Windows OS 
 Chrome
 
-LANGUAGES:
+##LANGUAGES:
 HTML
 CSS
 JAVASCRIPT
 
-COPYRIGHT:
+##COPYRIGHT:
 BONIFACE MAINA 2020
