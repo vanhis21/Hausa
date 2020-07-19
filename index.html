@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="sty.css">
+  <script src="js/styl.js"></script>
+</head>
+
+<body>
+  <h2>BIRTHDAY GENERATOR IN HAUSA</h2>
+  <div class="flex">
+
+    <form action="#" onsubmit="deriveName()">
+      <label for="bdate">DATE</label><br>
+      <input class="form-control" type="number" min="1" max="31" name="day" required="">
+      <br>
+      <br>
+      <label for="bmonth">MONTH</label><br>
+      <input class="form-control" name="month" required="">
+      <br>
+      <br>
+      <label for="byear">YEAR</label><br>
+      <input class="form-control" type="number" min="1920" max="2019" name="year" required="">
+      <br>
+      <br>
+      <label for="bgender">GENDER</label><br>
+      <select class="form-control" id="gender" name="gender">
+        <option disabled="" selected=""></option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <br>
+      <br>
+      <button class="btn btn-block btn-outline-dark" type="submit">
+        Generate
+      </button>
+    </form>
+
+  </div>
+</body>
+
+</html>

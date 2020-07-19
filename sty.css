@@ -1,0 +1,26 @@
+html{
+   
+    background-image: url("https://img.freepik.com/free-vector/abstract-blue-violet-light-line-slash-dark-grey-blank-space-design-modern-futuristic-background_104237-144.jpg?size=626&amp;ext=jpg");
+
+}
+
+h2{text-align: center;
+color: chartreuse;
+font-family: 'Courier New', Courier, monospace sans-serif;
+font-size: 25px;
+font-size: large;}
+form {
+    color: azure;
+    font-family: fantasy;
+    font-size: large;
+    display: inline-block;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: crimson;
+    background-repeat: no-repeat;
+}
