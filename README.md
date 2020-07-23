@@ -3,7 +3,7 @@
 The program takes your birthday and translates it to Hausa day names of the week regarding on the day you were born and your gender.
 
 
-##LIVE LINK : https://vanhis21.github.io/Hausa/
+LIVE LINK : https://vanhis21.github.io/Hausa/
 
 SYSTEM REQUIREMENTS :
 
